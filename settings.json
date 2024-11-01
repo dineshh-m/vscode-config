@@ -1,0 +1,108 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "oneDarkPro.editorTheme": "Ayu",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.iconTheme": "chalice-icon-theme",
+    "editor.lineNumbers": "relative",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vim.enableNeovim": true,
+    "editor.fontFamily": "CaskaydiaCove Nerd Font, Consolas, 'Courier New', monospace",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorTheme": "Vesper",
+
+    // ui stuff
+    //    font
+    // "editor.fontFamily": "GeistMono Nerd Font, Berkeley Mono, monospace",
+    "editor.fontFamily": "Geist Mono, Berkeley Mono, monospace",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.42857, // makes font size 14 have line height of ~20px
+    "apc.font.family": "Geist Mono", // apply font to ALL the UI, requires APC extension
+
+     //   cursor
+    "editor.cursorBlinking": "smooth", // smol cursor animation, looks nice
+    "editor.cursorSmoothCaretAnimation": "on", // move cursor smoothly
+
+    //    window
+    //     title bar
+    "window.title": "${dirty}${folderName}${separator}${activeEditorMedium}",
+
+     //     minimap
+    "editor.minimap.renderCharacters": false, // make minimap blockish (low level of detail)
+    "editor.hideCursorInOverviewRuler": true, // don't highlight current line in scrollbar
+    "editor.minimap.autohide": true, // shows minimap only on hover
+
+
+    //     sidebar
+    // "workbench.activityBar.location": "hidden", // hide sidebar icons, use cmd+b to toggle open
+    "workbench.sideBar.location": "left", // puts sidebar on the right, less disruptive (doesn't shift code if text wrap is disabled) when opening with cmd+b
+
+     //     bottom bar
+    "workbench.statusBar.visible": true, // hide bottom bar
+
+    //     editor
+    "editor.stickyScroll.enabled": true, // keep block name fixed at top when scrolling
+    "gitlens.mode.active": "zen", // toggle with command palette, zen mode hides gitlens stuff for when you don't need it
+    "editor.wordWrap": "on", // wrap text instead of scrolling horizontally
+
+
+    //   Theme
+    "workbench.iconTheme": "chalice-icon-theme",
+    "workbench.colorTheme": "Vesper",
+    //     Overrides vesper theme start
+    "workbench.colorCustomizations": {
+      "editorGutter.addedBackground": "#A0A0A0",
+      "editorGutter.deletedBackground": "#A0A0A0",
+      "editorGutter.modifiedBackground": "#A0A0A0"
+    },
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        // remove peppermint flavor
+        {
+          "name": "String, Symbols, Inherited Class",
+          "scope": [
+            "string",
+            "constant.other.symbol",
+            "constant.other.key",
+            "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+          ],
+          "settings": {
+            "foreground": "#A0A0A0"
+          }
+        },
+        {
+          "name": "CSS ID's",
+          "scope": [
+            "source.sass keyword.control",
+            "meta.attribute-selector.scss"
+          ],
+          "settings": {
+            "foreground": "#ffffff"
+          }
+        },
+        {
+          "name": "Inserted",
+          "scope": ["markup.inserted"],
+          "settings": {
+            "foreground": "#ffffff"
+          }
+        }
+      ]
+    },
+    "workbench.activityBar.location": "hidden",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    //     Overrides vesper theme end
+}
